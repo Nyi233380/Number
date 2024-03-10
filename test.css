@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhaijaan|Ubuntu');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+body{
+    background-attachment: fixed;
+    background: url(home/projectbgsem4.jpg);
+    margin: 0 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.back{
+    display: flex;
+    margin-top: 20px;
+}
+.button {
+appearance: none;
+background-color: black;
+border: 2px solid rgb(0, 0, 0);
+border-radius: 15px;
+box-sizing: border-box;
+cursor: pointer;
+display: inline-block;
+font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+font-size: 16px;
+font-weight: 600;
+line-height: normal;
+margin-bottom: 9%;
+height: 30px;
+outline: none;
+text-align: center;
+text-decoration: none;
+transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+user-select: none;
+-webkit-user-select: none;
+touch-action: manipulation;
+width: 7%;
+will-change: transform;
+
+}
+
+.button:disabled {
+pointer-events: none;
+}
+
+.button:hover {
+background-color: rgb(95, 95, 95);
+box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+transform: translateY(-2px);
+}
+
+.button:active {
+box-shadow: none;
+transform: translateY(0);
+}
+.back a{
+    color: white;
+}
+
+
+
+.wrapper{
+    margin-top: -10%;
+}
+.payment{
+    border-radius: 20px;
+    box-shadow: 10px 10px 7px 16px rgba(0, 0, 0, 0.18);
+    background: white;
+    max-width: 360px;
+    margin: 80px auto;
+    height: auto;
+    padding: 35px;
+    padding-top: 70px;
+    position: relative;
+}
+.payment h2{
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    color: #000000;
+}
+
+.form label{
+    display: block;
+    color: #555555;
+    margin-bottom: 6px;
+}
+.form .input{
+    padding: 13px 0 13px 25px;
+    width: 100%;
+    text-align: center;
+    border: 2px solid #dddddd;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    word-wrap: 3px;
+    outline: none;
+    font-size: 16px;
+    color: #555555;
+}
+
+.card-gap{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-item{
+    width: 48%;
+}
+
+.space{
+    margin-bottom: 20px;
+}
+
+.icon-relative{
+    position: relative;
+}
+.icon-relative .fas,
+.icon-relative .far{
+    position: absolute;
+    bottom: 12px;
+    left: 15px;
+    font-size: 20px;
+    color: #5555;
+}
+.btn{
+    margin-top: 40px;
+    background: #000000;
+    padding: 12px;
+    text-align: center;
+    color: #f8f8f8;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.payment-logo{
+    position: absolute;
+   top: -50px;
+   left: 50%;
+   transform: translateX(-50%);
+   width: 100px;
+   height: 100px;
+   background: #f8f8f8;
+   border-radius: 50%;
+   box-shadow: 0 0 5px rgba(0,0,0,0);
+   text-align: center;
+   line-height: 85px;
+}
+.payment-logo:before{
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 90px;
+    height: 90px;
+    background: #000000;
+    border-radius: 50%;
+}
+.payment-logo p{
+    position: relative;
+    color: #f8f8f8;
+    font-family: 'Baloo Bhaijaan',cursive;
+    font-size: 58px;
+}
+
+@media screen and (max-width: 420px){
+    .card-gap{
+        flex-direction: column;
+    }
+    .card-item{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .btn{
+        margin-bottom: 20px;
+    }
+}

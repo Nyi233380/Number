@@ -1,0 +1,163 @@
+body{
+    background-image: url(home/projectbgsem4.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+.back{
+  display: flex;
+  margin-top: 20px;
+  padding-left: 30px;
+}
+.button {
+appearance: none;
+background-color: black;
+border: 2px solid rgb(0, 0, 0);
+border-radius: 15px;
+box-sizing: border-box;
+cursor: pointer;
+display: inline-block;
+font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+font-size: 16px;
+font-weight: 600;
+line-height: normal;
+margin-bottom: 9%;
+height: 30px;
+outline: none;
+text-align: center;
+text-decoration: none;
+transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+user-select: none;
+-webkit-user-select: none;
+touch-action: manipulation;
+width: 7%;
+will-change: transform;
+
+}
+.button:disabled {
+pointer-events: none;
+}
+
+.button:hover {
+background-color: rgb(95, 95, 95);
+box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+transform: translateY(-2px);
+}
+
+.button:active {
+box-shadow: none;
+transform: translateY(0);
+}
+.back a{
+  color: white;
+}
+
+
+
+.boxcontactfeedback{
+    margin: -7%;
+    padding-left: 44%;
+    border-radius: 20px; 
+}
+.boxcontact{
+    padding-left: 20px;
+    background-color: rgb(89, 89, 89);
+    border-radius: 20px; 
+    width: 360px;
+    height: 600px;   
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+.boxcontactfeedback .boxcontact h2{
+    padding-top: 20px;
+    text-align: center;
+}
+.boxcontactfeedback .boxcontact label{
+    padding-left: 20px;
+}
+.boxcontactfeedback .boxcontact .write{
+    width: 70%;
+    padding-bottom: 10px;
+    height: 20px;
+    border-radius: 10px;
+}
+.boxcontactfeedback .boxcontact textarea{
+    width: 70%;
+    padding-bottom: 30px;
+    border-radius: 10px;
+}
+
+.boxcontact:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ffffff,
+    #000000,
+    #bababa,
+    #000000,
+    #5d5d5d,
+    #000000,
+    #474747,
+    #000000,
+    #ffffff
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-boxcontact 20s linear infinite;
+  transition: opacity 0.5s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-boxcontact {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 700% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.boxcontact:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(89, 89, 89);
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+.boxcontact .submit{
+    border-radius: 20px;
+    margin-top: 10px;
+    width:100px;
+    height: 30px;
+    text-align: center;
+    font-size: 15px;
+    background-color: black;
+    box-shadow:  1px 2px 4px rgb(255, 255, 255);
+    color: white;
+}
+.boxcontact .submit:hover{
+    background-color: white;
+    box-shadow: 1px 2px 4px black;
+    color: black;
+}

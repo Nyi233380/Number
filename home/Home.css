@@ -1,0 +1,320 @@
+body{
+    
+    background-attachment: fixed;
+    background-image: url(projectbgsem4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#menu .page1:visited{
+    color: gray;
+}
+#menu{
+    margin-left: -10px;
+    margin-right: -8px;
+    margin-top: -10px;
+    
+    padding-top: 10px;
+    padding-bottom: 13px;
+    background-color: #000000;
+}
+#menu .page1, .page2, .page3, .page4{
+    text-decoration: none;
+    margin-top: 20px;
+    padding-right: 10px;
+    color:white;
+    font-size: larger;
+    margin-left: 5%;
+}
+#menu a:hover{
+    color:gray;
+}
+#menu .detail{
+    margin-left: 60%;
+    color: white;
+    font-size: 25px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 15px;
+}
+#menu .detail:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0.2px 0.2px 0.2px 0.2px rgb(255, 255, 255);
+}
+
+
+.slideshow1 {
+    background-color: transparent;
+    margin-top: 5%;
+    margin-left: 23.5%;
+    max-width: 800px;
+    max-height: 400px;
+    overflow: hidden;
+    border-radius: 40px;
+}
+.slides2 {
+    display: flex;
+    transition: transform 2s ease-in-out;
+}
+.slide3 {
+    flex: 0 0 100%;
+}
+.thumbnails {
+    text-align: center;
+    margin-top: 10px;
+}
+.thumbnail {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.thumbnail.active {
+    border: 2px solid #333; /* Add border to highlight the active thumbnail */
+}
+
+
+.footerContainer{
+    margin-top: 10px;
+    height: 90px;
+    background-color: rgba(10, 10, 10, 0.974);
+    margin-left: -10px;
+    width: 101.2%;
+    margin-bottom: -10px;
+}
+.socialIcons{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content:left;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding: 5px;
+    background-color: white;
+    margin: 5px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 1em;
+    color: black;
+    opacity: 0.9;
+}
+.socialIcons a:hover{
+    background-color: rgba(133, 116, 116, 0.723);
+    transition: 0.5s;
+}
+.footerNav{
+    margin-top: -70px;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: right;
+    list-style: none;
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+.footerBottom{
+    margin-top: -50px;
+    padding-bottom: 5px;
+    color: white;
+    text-align: center;
+}
+.footerBottom p{
+    color: white;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+.contactbtn{
+    font-size: 18px;
+    color: white;
+    outline: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+.contactbtn:hover{
+    color: gray;
+}
+
+
+
+.productheader{
+    margin-top: 10%;
+    margin-bottom: -7%;
+    margin-left: 12%;
+}
+
+
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+
+  .slide {
+    min-width: 25%;
+  }
+  .slider-container {
+    width: 80%;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    overflow: hidden;
+    position: relative;
+}
+.slide img {
+    border: 3px solid black;
+    border-radius: 30px;
+    width: 60%;
+    height: 85%;
+}
+.slide .imgname{
+    text-align: center;
+    height: 85%;
+}
+
+
+.prev, .next {
+    border-radius: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 27%;
+    padding: 10px;
+    background-color: transparent;
+    color: black;
+    text-decoration: none;
+    z-index: 1;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+.prev:hover{
+    color: white;
+    background-color: black;
+}
+.next:hover{
+    color: white;
+    background-color: black;
+}
+
+
+
+
+.but{
+    display: flex;
+    justify-content: space-around;
+}
+.button {
+appearance: none;
+background-color: transparent;
+border: 2px solid rgb(0, 0, 0);
+border-radius: 15px;
+box-sizing: border-box;
+cursor: pointer;
+display: inline-block;
+font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+font-size: 16px;
+font-weight: 600;
+line-height: normal;
+margin-bottom: 9%;
+min-height: 60px;
+min-width: 0;
+outline: none;
+padding: 16px 24px;
+text-align: center;
+text-decoration: none;
+transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+user-select: none;
+-webkit-user-select: none;
+touch-action: manipulation;
+width: 10%;
+will-change: transform;
+
+}
+
+.button:disabled {
+pointer-events: none;
+}
+
+.button:hover {
+color: white;
+background-color: rgb(0, 0, 0);
+box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+transform: translateY(-2px);
+}
+
+.button:active {
+box-shadow: none;
+transform: translateY(0);
+}
+.but a{
+    color: black;
+}
+
+.mylogo{
+    margin-top: -60px;
+    padding-left: 25%;
+    border-radius: 10px;
+}
+.mylogo img{
+    border-radius: 10px;
+    width: 60px;
+}
+
+.onlinep1 p{
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 5%;
+    width: 60%;
+    margin-top: 15%;
+}
+.onlinep2 p{
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 35%;
+    width: 62%;
+    margin-top: -13%;
+}
+.onlinep3 p{
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 5%;
+    width: 60%;
+    margin-top: 17%;
+}
+.online1 img{
+    box-shadow: 10px 10px 10px black;
+    margin-top: -15%;
+    margin-left: 68%;
+    border-radius: 20px;
+}
+.online2 img{
+    box-shadow: 10px 10px 10px black;
+    margin-top: 10%;
+    margin-left: 5%;
+    border-radius: 20px;
+}
+.online3 img{
+    box-shadow: 10px 10px 10px black;
+    margin-top: -16%;
+    margin-left: 68%;
+    border-radius: 20px;
+}
